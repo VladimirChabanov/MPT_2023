@@ -66,10 +66,10 @@ whatis ls
 ls (1)               - list directory contents
 ```
 
-Или хотите посмотреть какие команды начинаются с rm:
+Или хотите посмотреть какие команды начинаются с pass:
 
 ```bash
-whatis -w "rm*"
+whatis -w "pass*"
 ```
 
 Вывод:
