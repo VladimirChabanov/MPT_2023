@@ -1,0 +1,42 @@
+%%{init: { 'logLevel': 'debug', 'theme': 'base' } }%%
+      gitGraph
+        commit id: "Добавлен ReadMe.md"
+        commit id: "Добавлен .gitignore"
+        branch dev
+        branch x
+        checkout x
+        commit id: "Добавлен workflow welcome" type:REVERSE
+        commit id: "Обновлён workflow welcome" type:REVERSE
+        commit id: "Добавлен dump_contexts welcome" type:REVERSE
+		checkout dev
+		branch " "
+        checkout " "
+		commit id: "Добавлен шаблон приложения"
+		commit id: "Добавлены unit тесты"
+		commit id: "Добавлен workflow unit-tests"
+		commit id: "Обновлён workflow unit-tests"
+		commit id: "Добавлен workflow pull-request-to-dev"
+		checkout dev
+		merge " " id: "Merge pull request 1"
+		branch docker
+		checkout docker
+		commit id: "Добавлен workflow staging"
+		commit id: "Добавлен Dockerfile"
+		checkout dev
+		merge docker id: "Merge pull request 2"
+		commit id: "Добавлены бейджи"
+		commit id: "Добавлены All Mega Hard Tests PASS"
+		commit id: "Добавлен workflow pull-request-to-main"
+		checkout main
+		merge dev id: "Merge pull request 3"
+		checkout dev
+		branch add_data_base
+		checkout add_data_base
+		commit id: "Изменён основной код приложения"
+		commit id: "Добавлен mysql-connector-python"
+		commit id: "Изменён workflow pull-request-to-dev"
+		commit id: "Изменён workflow pull-request-to-main"
+		checkout dev
+		merge add_data_base id: "Merge pull request 4"
+		checkout main
+		merge dev id: "Merge pull request 5"
