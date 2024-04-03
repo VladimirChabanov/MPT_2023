@@ -602,9 +602,8 @@
 
 97. [docker] Закоммитьте Dockerfile. На GitHub пока не отправляем.
 
-98. Откройте репозиторий на GitHub и в его настройках добавьте в раздел [секретов](https://docs.github.com/ru/actions/security-guides/encrypted-secrets) (secrets) переменную  `DOCHUB_USERNAME` - имя пользователя от аккаунта DockerHub и `DOCHUB_TOKEN` - пароль от его. Там же, но на соседней вкладке (variables) добавьте переменную `DOCHUB_USERNAME` с именем пользователя DockerHub.
+98. Откройте репозиторий на GitHub и в его настройках добавьте в раздел [секретов](https://docs.github.com/ru/actions/security-guides/encrypted-secrets) (secrets) переменную `DOCHUB_USERNAME` - имя пользователя от аккаунта DockerHub и `DOCHUB_TOKEN` - пароль от него. Там же, но на соседней вкладке (variables) добавьте переменную `DOCHUB_USERNAME` с именем пользователя DockerHub.
 
-    > [!NOTE]
     > Здесь мы используем в качестве репозитория для контейнера - DockerHub, но GitHub так же позволяет хранить Docker образы в своём реестре пакетов на [ghcr.io](https://ghcr.io) (подробнее в [документации](https://docs.github.com/ru/packages/working-with-a-github-packages-registry/working-with-the-container-registry)).
 
 99. [docker] Теперь можно отправить все созданные коммиты на GitHub.
@@ -627,7 +626,7 @@
 105. Для начала добавим бейдж отображающий статус процесса сборки и отправки образа на DockerHub. Файл описывающий соответствующий workflow называется у нас "staging.yml". Бейдж можно получить по ссылке в формате:
 
      ```plain
-https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg
+     https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg
      ```
 
      `<OWNER>` - это имя владельца репозитория; `<REPOSITORY>` - это название репозитория; `<WORKFLOW_FILE>` - это название файла рабочего процесса (с расширением!). В нашем случае `staging.yml`. Регистр букв - важен!
