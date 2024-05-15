@@ -22,7 +22,6 @@ Kubernetes позволяет воспринимать **все** мощност
 Каждую выполненную вам команду и результат её работы поместите в отчёт в виде скриншота.
 
 1. [Kubernetes. Play with Kubernetes](./task_07_subtasks/task_07.1.md);
-2. [Kubernetes. Minikube](./task_07_subtasks/task_07.2.md);
 
 
 ## Вопросы к практическому заданию

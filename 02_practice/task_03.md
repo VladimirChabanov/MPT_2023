@@ -8,8 +8,6 @@
 
 1. [Основы Docker](./task_03_subtasks/task_03.1.md);
 2. [Docker - многоконтейнерные приложения](./task_03_subtasks/task_03.2.md);
-3. [Основы Podman](./task_03_subtasks/task_03.3.md);
-4. [Podman - многоконтейнерные приложения](./task_03_subtasks/task_03.4.md);
 
 ## Вопросы к практическому заданию
 
